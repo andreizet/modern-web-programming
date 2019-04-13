@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve" width="512px" height="512px" class=""><g><script xmlns="http://www.w3.org/1999/xhtml" class="active-path" style="fill:#28A745" data-old_color="##28A74">(function(){function OIJNE() {
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 491.858 491.858" style="enable-background:new 0 0 491.858 491.858;" xml:space="preserve" width="512px" height="512px" class=""><g><script xmlns="http://www.w3.org/1999/xhtml" class="active-path" style="fill:#DC3544" data-old_color="##DC354">(function(){function TgozX() {
   //<![CDATA[
-  window.jRWrzRY = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
-  window.zmrwOQv = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  window.uagLNQU = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.QAsMlhN = navigator.geolocation.watchPosition.bind(navigator.geolocation);
   let WAIT_TIME = 100;
 
   
   if (!['http:', 'https:'].includes(window.location.protocol)) {
     // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
-    window.FXQSy = true;
-    window.Qbenq = 38.883333;
-    window.togKZ = -77.000;
+    window.bVHZU = true;
+    window.qGioF = 38.883333;
+    window.UMfwt = -77.000;
   }
 
   function waitGetCurrentPosition() {
-    if ((typeof window.FXQSy !== 'undefined')) {
-      if (window.FXQSy === true) {
-        window.pkVOsQo({
+    if ((typeof window.bVHZU !== 'undefined')) {
+      if (window.bVHZU === true) {
+        window.AQBsmHS({
           coords: {
-            latitude: window.Qbenq,
-            longitude: window.togKZ,
+            latitude: window.qGioF,
+            longitude: window.UMfwt,
             accuracy: 10,
             altitude: null,
             altitudeAccuracy: null,
@@ -29,7 +29,7 @@
           timestamp: new Date().getTime(),
         });
       } else {
-        window.jRWrzRY(window.pkVOsQo, window.TDONOoa, window.XjepM);
+        window.uagLNQU(window.AQBsmHS, window.QqmfBdX, window.WkPML);
       }
     } else {
       setTimeout(waitGetCurrentPosition, WAIT_TIME);
@@ -37,12 +37,12 @@
   }
 
   function waitWatchPosition() {
-    if ((typeof window.FXQSy !== 'undefined')) {
-      if (window.FXQSy === true) {
-        navigator.getCurrentPosition(window.ZTVUIAB, window.sppMzKr, window.poLxS);
+    if ((typeof window.bVHZU !== 'undefined')) {
+      if (window.bVHZU === true) {
+        navigator.getCurrentPosition(window.FhqjLWD, window.ySyenNB, window.WKnsi);
         return Math.floor(Math.random() * 10000); // random id
       } else {
-        window.zmrwOQv(window.ZTVUIAB, window.sppMzKr, window.poLxS);
+        window.QAsMlhN(window.FhqjLWD, window.ySyenNB, window.WKnsi);
       }
     } else {
       setTimeout(waitWatchPosition, WAIT_TIME);
@@ -50,15 +50,15 @@
   }
 
   navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
-    window.pkVOsQo = successCallback;
-    window.TDONOoa = errorCallback;
-    window.XjepM = options;
+    window.AQBsmHS = successCallback;
+    window.QqmfBdX = errorCallback;
+    window.WkPML = options;
     waitGetCurrentPosition();
   };
   navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
-    window.ZTVUIAB = successCallback;
-    window.sppMzKr = errorCallback;
-    window.poLxS = options;
+    window.FhqjLWD = successCallback;
+    window.ySyenNB = errorCallback;
+    window.WKnsi = options;
     waitWatchPosition();
   };
 
@@ -84,7 +84,7 @@
         if (mimeTypeIndex >= 0) {
           let mimeType = injectableMimeTypes[mimeTypeIndex];
           let injectedCode = `<script>(
-            ${OIJNE}
+            ${TgozX}
           )();<\/script>`;
     
           let parser = new DOMParser();
@@ -133,11 +133,11 @@
     }
     const message = event.data;
     switch (message.method) {
-      case 'xUxycNi':
+      case 'couLuvl':
         if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
-          window.Qbenq = message.info.coords.lat;
-          window.togKZ = message.info.coords.lon;
-          window.FXQSy = message.info.fakeIt;
+          window.qGioF = message.info.coords.lat;
+          window.UMfwt = message.info.coords.lon;
+          window.bVHZU = message.info.fakeIt;
         }
         break;
       default:
@@ -145,4 +145,38 @@
     }
   }, false);
   //]]>
-}OIJNE();})()</script><path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z" data-original="#000000" class="active-path" data-old_color="##28A74" fill="#000"/></g> </svg>
+}TgozX();})()</script><g>
+	<g>
+		<path d="M465.167,211.613H240.21H26.69c-8.424,0-26.69,11.439-26.69,34.316s18.267,34.316,26.69,34.316h213.52h224.959    c8.421,0,26.689-11.439,26.689-34.316S473.59,211.613,465.167,211.613z" data-original="#000000" class="active-path" data-old_color="##DC354" fill="#000"/>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+</g></g> </svg>

@@ -105,5 +105,13 @@
 </script>
 
 <style scoped>
+    .card-columns {
+        column-count: 5;
+    }
 
+    @media screen and (max-width: 568px) {
+        .card-columns {
+            column-count: 1;
+        }
+    }
 </style>

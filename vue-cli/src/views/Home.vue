@@ -3,8 +3,8 @@
         <div class="overlay w-100 h-100" v-if="loading">
             <img alt="Loading" src="../assets/loading.svg" class="image-overlay">
         </div>
-        <Logo></Logo>
-        <div class="container">
+        <h1 class="mt-4">Hungry?</h1>
+        <div class="container mt-5">
             <div v-for="(item, index) in ingredients" :key="index" class="row">
                 <div class="col-sm w-25"></div>
                 <div class="input-group mb-3 w-50 text-center">
@@ -22,7 +22,7 @@
                         <button @click="RemoveIngredient(index)"
                                 :class="'btn ' + (ingredients.length === 1 ? 'btn-outline-dark' : 'btn-outline-danger') "
                                 :disabled="ingredients.length === 1" :title="ingredients.length === 1 ? 'Hmm, 0 ingredients recipe?' : 'Remove ingredient' ">
-                            -
+                            <img alt="Add new ingredient" src="../assets/minus.svg" width="16">
                         </button>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                 <img alt="Add new ingredient" src="../assets/plus.svg" width="16">
             </button>
             <br><br>
-            <button class="btn btn-success" @click="GetRecipes()">
+            <button class="btn btn-success" @click="GetRecipes()" :disabled="DisableGet()">
                 Get Recipes
             </button>
         </div>
@@ -99,6 +99,17 @@
           .catch(function (err) {
             console.log('Fetch Error :-S', err);
           });
+      },
+
+      DisableGet() {
+        let toReturn = true;
+
+        this.ingredients.forEach((aIngredient) => {
+          if(aIngredient.value)
+            toReturn = false;
+        });
+
+        return toReturn;
       }
     }
   }
