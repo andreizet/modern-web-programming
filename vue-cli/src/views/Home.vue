@@ -3,7 +3,7 @@
         <div class="overlay w-100 h-100" v-if="loading">
             <img alt="Loading" src="../assets/loading.svg" class="image-overlay">
         </div>
-        <h1 class="mt-4">Hungry?</h1>
+        <h1 class="mt-4">Insert ingredients</h1>
         <div class="container mt-5">
             <div v-for="(item, index) in ingredients" :key="index" class="row">
                 <div class="col-sm w-25"></div>

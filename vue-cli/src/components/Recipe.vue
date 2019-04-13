@@ -15,12 +15,12 @@
                 <ul v-else class="nav nav-tabs">
                     <li class="nav-recipe">
                         <a :class="'nav-link ' + (recipe.tab === 'ingredients' || !recipe.tab ? 'active' : '')" href="#" @click.prevent="SwitchTab(index, 'ingredients')">
-                            Ingredients
+                            <img alt="Ingredients" src="../assets/harvest.svg" width="30">
                         </a>
                     </li>
                     <li class="nav-recipe">
                         <a :class="'nav-link ' + (recipe.tab === 'instructions' ? 'active' : '')" href="#" @click.prevent="SwitchTab(index, 'instructions')">
-                            Instructions
+                            <img alt="Ingredients" src="../assets/book.svg" width="30">
                         </a>
                     </li>
                 </ul>
@@ -114,4 +114,5 @@
             column-count: 1;
         }
     }
+
 </style>
