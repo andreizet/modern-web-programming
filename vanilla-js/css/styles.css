@@ -1,0 +1,199 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #42b883!important;
+    border-color: #42b883!important;
+}
+
+.bg-success2 {
+    background-color: #42b883!important;
+}
+
+.container {
+    max-width: 4069px!important;
+}
+
+#nav {
+    padding: 30px;
+}
+
+.list-unstyled a {
+    color: #fff!important;
+}
+
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #42b883;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #42b883;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #42b883;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #42b883!important;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #000!important;
+    background: #e9ecef;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #42b883;
+}
+
+/*Mobile CSS*/
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* top layer */
+        z-index: 9999;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.card-columns {
+    column-count: 5;
+}
+
+@media screen and (max-width: 568px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+.small-overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 99; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057!important;
+}
+a {
+    color: #495057!important;
+}

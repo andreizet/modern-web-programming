@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>Recipes Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but Recipes Finder doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+
+<div class="wrapper" id="app" v-cloak>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <span class="ml-2">
+                <a href="">
+                <link href='https://fonts.googleapis.com/css?family=Shadows Into Light Two' rel='stylesheet'>
+                <img alt="Vue logo" src="./assets/logo.svg" width="100">
+                <h1 style="font-family: 'Shadows Into Light Two';font-size: 22px; color: #fff" class="ml-2">
+                    Recipes Finder
+                </h1>
+            </a>
+            </span>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="ShowAbout()">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container p-0">
+        <nav class="navbar navbar-dark bg-success2">
+            <div class="w-100 float-left text-left">
+                <img alt="Menu Switch Icon" class="menu-button"
+                     src="./assets/menu.svg" width="40" onclick="ToggleSidebar()" id="sidebarCollapse">
+                <span style="font-family: 'Shadows Into Light Two';font-size: 30px; color:#fff" class="align-middle">
+                  Recipes Finder
+                </span>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="home" id="home">
+                <div class="small-overlay w-100 h-100 d-none" id="loading-overlay">
+                    <img alt="Loading" src="./assets/loading.svg" class="image-overlay">
+                </div>
+                <h1 class="mt-4">Insert ingredients</h1>
+                <div class="container mt-5" id="list">
+                    <div class="row" id="row-element">
+                        <div class="col-sm w-25"></div>
+                        <div class="input-group mb-3 w-50 text-center" id="row-content">
+                            <input type="text"
+                                   id="ingredient"
+                                   class="form-control"
+                                   placeholder="Ingredient"
+                                   onkeydown="GetRecipes(event)">
+                            <div class="input-group-append">
+                                <button onclick="RemoveIngredient(event)" class="'btn btn-outline-danger">
+                                    <img alt="Add new ingredient" src="./assets/minus.svg" width="16">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm  w-25"></div>
+                    </div>
+                </div>
+
+                <div style="text-align: center">
+                    <button class="btn btn-outline-success" onclick="AddNew()">
+                        <img alt="Add new ingredient" src="./assets/plus.svg" width="16">
+                    </button>
+                    <br><br>
+                    <button class="btn btn-success" id="get-recipes" onclick="GetRecipes()" disabled>
+                        Get Recipes
+                    </button>
+                </div>
+            </div>
+            <div id="recipes" class="d-none">
+                <h1 class="mt-4 d-none" id="recipes-title">Found recipes</h1>
+                <div class="card-columns" id="recipes-columns">
+                </div>
+                <div id="no-recipes" class="jumbotron jumbotron-fluid d-none">
+                    <div class="container">
+                        <h1 class="display-4">The plate is empty</h1>
+                        <img alt="Vue logo" src="./assets/plate.svg" width="100">
+                        <p class="lead">Maybe you misspelled an ingredient?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="d-none">
+                <div class="about">
+                    <h1>
+                        Modern Web Programming info bla bla bla ...
+                    </h1>
+                    <div id="readme-content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay" onclick="ToggleSidebar()"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

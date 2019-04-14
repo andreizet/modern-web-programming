@@ -39,7 +39,6 @@
                 Get Recipes
             </button>
         </div>
-
     </div>
 </template>
 
