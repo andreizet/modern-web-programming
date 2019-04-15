@@ -1,29 +1,27 @@
-# recipes-finder
+# Recipes Finder
+##### A modern web app showcase 
+
+## Prerequisites
+ - [Nodejs](https://nodejs.org/en/)
+ - [Browser :)](https://www.google.com/chrome/b/)
 
 ## Project setup
+##### Being in root/vue-cli, run the following commands in __command prompt__ or __terminal__
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start development server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Generate distribution files
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Packages user in this proejct
+ - [Vue.js](https://vuejs.org/)
+ - [Vue CLI](https://cli.vuejs.org/)
+ - [Vue Router](https://router.vuejs.org/)
+ - [Bootstrap](https://getbootstrap.com/)

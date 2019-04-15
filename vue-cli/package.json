@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "npm install && vue-cli-service serve",
-    "build": "npm install && vue-cli-service build"
+    "build": "npm install --production && vue-cli-service build"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
