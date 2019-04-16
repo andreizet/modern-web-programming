@@ -25,3 +25,7 @@ npm run build
  - [Vue CLI](https://cli.vuejs.org/)
  - [Vue Router](https://router.vuejs.org/)
  - [Bootstrap](https://getbootstrap.com/)
+ - [Showdown](https://github.com/showdownjs/showdown)
+ 
+### APIs used in this project
+ - [TheMealDB](https://www.themealdb.com/api.php)

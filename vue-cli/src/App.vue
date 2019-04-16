@@ -18,8 +18,7 @@
     <div class="container p-0">
       <nav class="navbar navbar-dark bg-success2">
         <div class="w-100 float-left text-left">
-            <img alt="Menu Switch Icon" class="menu-button"
-                 src="./assets/menu.svg" width="40" @click="ToggleSidebar()" id="sidebarCollapse">
+          <img alt="Menu Switch Icon" class="menu-button" src="./assets/menu.svg" width="40" @click="ToggleSidebar()" id="sidebarCollapse">
             <span style="font-family: 'Shadows Into Light Two';font-size: 30px; color:#fff" class="align-middle">
               Recipes Finder
             </span>

@@ -7,5 +7,10 @@
 ## Project setup
 There is nothing to setup, just open **index.html**
 
-### Packages user in this proejct
-Nothing, but plain Javascript.
+### Libraries user in this proejct
+### Libraries used in this project:
+ - [Bootstrap](https://getbootstrap.com/) 
+ - [Showdown](https://github.com/showdownjs/showdown)
+
+### APIs used in this project
+ - [TheMealDB](https://www.themealdb.com/api.php)
