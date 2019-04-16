@@ -6,7 +6,7 @@
  - [Browser :)](https://www.google.com/chrome/b/)
 
 ## Project setup
-##### Being in root/vue-cli, run the following commands in __command prompt__ or __terminal__
+Being in root/vue-cli, run the following commands in **command prompt** or **terminal**
 ```
 npm install
 ```

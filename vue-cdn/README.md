@@ -1,29 +1,13 @@
-# recipes-finder
+# Recipes Finder
+##### A modern web app showcase 
+
+## Prerequisites
+ - [Browser :)](https://www.google.com/chrome/b/)
 
 ## Project setup
-```
-npm install
-```
+There is nothing to setup, just open **index.html**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Packages user in this proejct
+ - [Vue.js](https://vuejs.org/)
+ - [Vue Router](https://router.vuejs.org/)
+ - [Bootstrap](https://getbootstrap.com/)
