@@ -17,3 +17,6 @@ There is nothing to setup, just open **index.html**
  
  ### APIs used in this project
   - [TheMealDB](https://www.themealdb.com/api.php)
+
+### Sources
+- [Google Developers PWA Guide](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)

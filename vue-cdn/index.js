@@ -54,3 +54,15 @@ var app = new Vue({
     }
   }
 });
+
+// register service worker if the api is available
+if ('serviceWorker' in navigator) {
+  // wait for the page to load, then we register the sw
+  window.addEventListener('load', () => {
+    // only when the page is loaded we register the service worker
+    navigator.serviceWorker.register('/sw.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
+}
