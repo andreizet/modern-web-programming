@@ -1,2 +1,3 @@
 /vue-cli/node_modules/*
+/electron/node_modules/*
 .idea/*
