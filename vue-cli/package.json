@@ -3,21 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "npm install && vue-cli-service serve",
+    "serve": "concurrently \"esline -w ./src/\" \"npm install && vue-cli-service serve\"",
     "build": "npm install --production && vue-cli-service build"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "core-js": "^2.6.5",
-    "jquery": "^3.4.0",
-    "popper.js": "^1.15.0",
-    "showdown": "^1.9.0",
-    "vue": "^2.6.6",
-    "vue-router": "^3.0.1"
+    "autoprefixer": "^9.8.0",
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "showdown": "^1.9.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.5.0",
-    "@vue/cli-service": "^3.5.0",
-    "vue-template-compiler": "^2.5.21"
+    "@vue/cli-plugin-babel": "^4.4.5",
+    "@vue/cli-service": "^4.4.5",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }
