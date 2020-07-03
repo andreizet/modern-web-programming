@@ -1,6 +1,11 @@
 # Recipes Finder
 ##### A modern web app showcase 
 
+
+
+
+
+
 ## Prerequisites
 See README.md file from inside each project.
 
