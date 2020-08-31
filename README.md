@@ -14,7 +14,7 @@ Each folder contains Recipes Finder app written in a different way, using differ
 
 ### Libraries used in this project:
  - [Vue.js](https://vuejs.org/)
- - [Vue CLI](https://cli.uejs.org/) [Only in **vue-cli**]
+ - [Vue CLI](https://cli.vuejs.org/) [Only in **vue-cli**]
  - [Vue Router](https://router.vuejs.org/) [Only in **vue-cli** & **vue-cdn**]
  - [Bootstrap](https://getbootstrap.com/) 
  - [Showdown](https://github.com/showdownjs/showdown)

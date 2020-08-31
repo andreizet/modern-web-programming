@@ -11,11 +11,6 @@ jobs:
     - name: git clone
       uses: actions/checkout@v2
 
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
-
   # Always check all markdown files in the repo since some links may got broken since last check
   markdown-link-check:
     runs-on: ubuntu-latest
